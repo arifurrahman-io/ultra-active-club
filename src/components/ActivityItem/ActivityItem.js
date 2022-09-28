@@ -2,7 +2,6 @@ import React from 'react';
 import './ActivityItem.css'
 
 const ActivityItem = ({ item, handleAddTime }) => {
-    console.log(item);
     const { picture, name, age, time, about } = item;
 
     return (

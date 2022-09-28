@@ -11,7 +11,6 @@ const Sidebar = ({ time }) => {
         total = (total + myTime);
     }
 
-    const grandTotal = parseFloat(total);
     return (
         <div>
             <div className='my-info'>
@@ -39,18 +38,19 @@ const Sidebar = ({ time }) => {
                 <h4>Add a Break</h4>
             </div>
             <div className='break-buttons'>
-                <button className='break-button'><p>10s</p></button>
-                <button className='break-button'><p>20s</p></button>
-                <button className='break-button'><p>30s</p></button>
-                <button className='break-button'><p>40s</p></button>
-                <button className='break-button'><p>50s</p></button>
+                <button className='break-button'><p><span id='brk-time1'>10</span></p></button>
+                <button className='break-button'><p><span id='brk-time2'>20</span></p></button>
+                <button className='break-button'><p><span id='brk-time3'>30</span></p></button>
+                <button className='break-button'><p><span id='brk-time4'>40</span></p></button>
+                <button className='break-button'><p><span id='brk-time5'>50</span></p></button>
+
             </div>
 
             <div>
                 <h4>Exercise Details</h4>
             </div>
             <div className='ex-time'>
-                <div>Exercise time</div>
+                <div><p>Exercise time</p></div>
                 <div><p>{total} minutes</p></div>
             </div>
         </div>
