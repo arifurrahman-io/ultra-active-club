@@ -1,0 +1,33 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+}
+
+.main-section {
+    background-color: aliceblue;
+    padding: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 45px;
+    height: 45px;
+    padding-right: 10px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.sidebar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}

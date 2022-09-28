@@ -1,0 +1,30 @@
+.card {
+    width: 300px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card-info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
