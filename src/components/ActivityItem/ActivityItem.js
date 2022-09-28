@@ -1,7 +1,7 @@
 import React from 'react';
 import './ActivityItem.css'
 
-const ActivityItem = ({ item }) => {
+const ActivityItem = ({ item, handleAddTime }) => {
     console.log(item);
     const { picture, name, age, time, about } = item;
 
@@ -14,7 +14,7 @@ const ActivityItem = ({ item }) => {
                 <p>Time requared: {time} minute(s)</p>
                 <p>{about}</p>
             </div>
-            <button className='item-button'>
+            <button onClick={() => handleAddTime(item)} className='item-button'>
                 <p>Add to list</p>
             </button>
         </div>

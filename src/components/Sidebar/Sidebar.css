@@ -1,0 +1,68 @@
+.my-info img {
+    width: 60px;
+}
+
+.my-info {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.my-name {
+    margin-left: 10px;
+}
+
+.my-name p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+.physical-info {
+    padding: 0px 15px;
+}
+
+.physical-info p,
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.break-buttons {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.break-button {
+    height: 45px;
+    width: 45px;
+    margin: 3px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.break-button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.ex-time {
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+}
