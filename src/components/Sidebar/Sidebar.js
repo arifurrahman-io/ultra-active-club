@@ -1,15 +1,16 @@
-import React from 'react';
+import { useState } from 'react';
 import image from '../../client-1.png'
 import './Sidebar.css'
 
 const Sidebar = ({ time }) => {
 
     let total = 0;
-
     for (const interval of time) {
         let myTime = parseInt(interval.time);
         total = (total + myTime);
     }
+
+    const [count, setCount] = useState(0);
 
     return (
         <div>
@@ -38,12 +39,11 @@ const Sidebar = ({ time }) => {
                 <h4>Add a Break</h4>
             </div>
             <div className='break-buttons'>
-                <button className='break-button'><p><span id='brk-time1'>10</span></p></button>
-                <button className='break-button'><p><span id='brk-time2'>20</span></p></button>
-                <button className='break-button'><p><span id='brk-time3'>30</span></p></button>
-                <button className='break-button'><p><span id='brk-time4'>40</span></p></button>
-                <button className='break-button'><p><span id='brk-time5'>50</span></p></button>
-
+                <button onClick={() => setCount(1)} className='break-button'><p><span id='brk-time1'>1m</span></p></button>
+                <button onClick={() => setCount(2)} className='break-button'><p><span id='brk-time2'>2m</span></p></button>
+                <button onClick={() => setCount(3)} className='break-button'><p><span id='brk-time3'>3m</span></p></button>
+                <button onClick={() => setCount(4)} className='break-button'><p><span id='brk-time4'>4m</span></p></button>
+                <button onClick={() => setCount(5)} className='break-button'><p><span id='brk-time5'>5m</span></p></button>
             </div>
 
             <div>
@@ -52,6 +52,17 @@ const Sidebar = ({ time }) => {
             <div className='ex-time'>
                 <div><p>Exercise time</p></div>
                 <div><p>{total} minutes</p></div>
+            </div>
+
+            <div className='break-time'>
+                <div><p>Exercise time</p></div>
+                <div><p>{count} minutes</p></div>
+            </div>
+
+            <div className='activityDone'>
+                <button className='activityDoneBtn'>
+                    <p>Activity Completed</p>
+                </button>
             </div>
         </div>
     );

@@ -73,3 +73,28 @@ h3 {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.break-time {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.activityDone {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.activityDoneBtn {
+    width: 100%;
+    background-color: dodgerblue;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
