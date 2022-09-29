@@ -4,6 +4,7 @@ import './ActivityItem.css'
 const ActivityItem = ({ item, handleAddTime }) => {
     const { picture, name, age, time, about } = item;
 
+
     return (
         <div className='card'>
             <img src={picture} alt="" />
@@ -14,7 +15,7 @@ const ActivityItem = ({ item, handleAddTime }) => {
                 <p>{about}</p>
             </div>
             <button onClick={() => handleAddTime(item)} className='item-button'>
-                <p>Add to list</p>
+                <p id='btnText'>Add to list</p>
             </button>
         </div>
     );

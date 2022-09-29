@@ -6,14 +6,16 @@ import './Sidebar.css'
 
 const Sidebar = ({ time }) => {
 
-    const notify = () => {
-        alert('Great! You have done all activities.')
-    }
+
 
     let total = 0;
     for (const interval of time) {
         let myTime = parseInt(interval.time);
         total = (total + myTime);
+    }
+
+    const notify = () => {
+        alert('Great! You have completed all activities.')
     }
 
     const [count, setCount] = useState(0);
