@@ -2,7 +2,13 @@ import { useState } from 'react';
 import image from '../../client-1.png'
 import './Sidebar.css'
 
+
+
 const Sidebar = ({ time }) => {
+
+    const notify = () => {
+        alert('Great! You have done all activities.')
+    }
 
     let total = 0;
     for (const interval of time) {
@@ -11,6 +17,7 @@ const Sidebar = ({ time }) => {
     }
 
     const [count, setCount] = useState(0);
+
 
     return (
         <div>
@@ -60,7 +67,7 @@ const Sidebar = ({ time }) => {
             </div>
 
             <div className='activityDone'>
-                <button className='activityDoneBtn'>
+                <button onClick={notify} className='activityDoneBtn'>
                     <p>Activity Completed</p>
                 </button>
             </div>

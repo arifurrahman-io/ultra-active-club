@@ -32,3 +32,25 @@
     top: 0;
     padding: 20px;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .main-section {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
